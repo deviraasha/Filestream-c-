@@ -1,0 +1,35 @@
+#include<iostream>
+#include<conio.h>
+#include<cstdlib>
+#include<fstream>
+using namespace std;
+
+struct mahasiswa{
+	char nama[50];
+};
+
+mahasiswa esgul;
+char esgul1[50],esgul2[50],esgul3[50];
+
+int garis(){
+	for(int i=0 ;i<80; i++){
+		cout<<"-";
+	}
+	cout<<endl;
+}
+
+int inputdata(){
+	cout<<"Masukkan Nama file (.txt) : ";
+	cin.getline(esgul1,50);
+	ofstream simpan (esgul1);
+	system("cls");
+	cout<<"\n";
+	cout<<"Masukkan text : ";
+	cin.getline(esgul.nama,50);
+	simpan<<esgul.nama<<endl;
+	cout<<"\n\n\n";
+	system("pause");
+}
+int main(){
+	inputdata();
+}
